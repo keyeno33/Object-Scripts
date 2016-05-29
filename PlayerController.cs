@@ -34,12 +34,12 @@ public class PlayerController : MonoBehaviour {
         //switch case for each object collision
         switch(collisionState)
         {
-            case col.gameObject.name == ObjSpeedIncr:
+            case gameObject.name == ObjSpeedIncr:
                     Destroy(col.gameObject);
                     speed = 20;
                 break;
 
-            case col.gameObject.name == ObjSpeedIncr:
+            case gameObject.name == ObjSpeedIncr:
                     Destroy(col.gameObject);
                     speed -= 5;
                 break;
