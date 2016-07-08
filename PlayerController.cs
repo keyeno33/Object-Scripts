@@ -55,16 +55,7 @@ public class PlayerController : MonoBehaviour{
 		{
 
 		case ObjMirror:
-
-			print (Mirror.transform.rotation.eulerAngles.y);
-
-			if (rb.transform.rotation.eulerAngles.y == 0) {
-				gameObject.transform.Rotate (0, 90, 0);
-				forceDirection = Vector3.right;
-				moveSpeed = 60;
-			}
-			break;
-
+			//call lazer reflection function
 		case ObjSpeedIncr:
 			
 			moveSpeed = 100;
